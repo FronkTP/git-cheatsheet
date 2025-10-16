@@ -162,7 +162,7 @@ Show the difference of what is in one branch (branch1) but not in another branch
 git diff <branch-name-2>...<branch-name-1>
 ```
 
-## Edit History
+## Edit history
 
 Reset the last commit and keep the staged changes
 

@@ -188,6 +188,36 @@ If the commit was already pushed, you’ll need to force push after resetting (D
 git push --force
 ```
 
+## Rewriting older history
+
+1. Go back to the last n commit
+
+```bash
+git rebase -i HEAD~n
+```
+
+2. Type `i` to insert, change `pick` to `edit`, type `:wq` to write and quit
+
+3. Make changes e.g. add files
+
+4. Amend the commit if you want to tweak the commit message
+
+```bash
+git commit --amend
+```
+
+Or if the commit message is already okay
+
+```bash
+git commit --amend --no-edit
+```
+
+5. Finish the rebase
+
+```bash
+ git rebase --continue
+```
+
 ## Temporary commits
 
 Save all changes

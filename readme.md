@@ -162,6 +162,16 @@ Show the difference of what is in one branch (branch1) but not in another branch
 git diff <branch-name-2>...<branch-name-1>
 ```
 
+Delete a local branch (needs to be in another branch)
+```bash
+git branch -d <branch-name>
+```
+
+Delete a remote branch
+```bash
+git push origin -d <branch-name>
+```
+
 ## Edit history
 
 Reset the last commit and keep the staged changes

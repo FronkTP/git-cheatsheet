@@ -225,7 +225,14 @@ git commit --amend --no-edit
 5. Finish the rebase
 
 ```bash
- git rebase --continue
+git rebase --continue
+```
+
+Add files to the last commit
+
+```bash
+git add forgotten-file.txt
+git commit --amend --no-edit
 ```
 
 ## Temporary commits

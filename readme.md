@@ -243,6 +243,18 @@ Save all changes
 git stash
 ```
 
+Save staged files
+
+```bash
+git stash push --staged
+```
+
+Add message to the stash
+
+```bash
+git stash -m 'message'
+```
+
 Write the changes from top of stash stack
 
 ```bash
